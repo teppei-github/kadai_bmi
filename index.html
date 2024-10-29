@@ -1,13 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>JavaScriptの基礎を学ぼう_5章課題</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p>こんにちは<input id="name" />さん</p>
-    <script></script>
+    <section>
+      <h1>BMIを計算しよう！</h1>
+      <div class="bmiwrap">
+        <div>
+          <label for="taijyu">体重:</label>
+          <input id="taijyu" /> kg
+        </div>
+        <div>
+          <label for="sincho">身長:</label>
+          <input id="sincho" /> cm
+        </div>
+        <div>
+          <button onClick="calcBMI()" id="button">計算する！</button>
+        </div>
+        <div>
+          <label for="kekka">結果:</label>
+          <input readonly id="kekka" />
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
   </body>
 </html>
